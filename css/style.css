@@ -245,7 +245,7 @@ h6 {
 }
 
 #intro #intro-carousel::before {
-  content: '';
+  content: "";
   background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   height: 100%;
@@ -515,7 +515,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header h2::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 50px;
@@ -1013,6 +1013,112 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .form button[type="submit"]:hover {
   background: #2dc899;
+}
+
+/* Price Section
+--------------------------------*/
+
+#price {
+  padding: 30px 0;
+}
+
+#price .price-info {
+  margin-bottom: 20px;
+}
+#price .box {
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  background: #fff;
+  transition: 0.4s;
+  padding: 24px;
+  margin-bottom: 40px;
+  height: 100%;
+}
+
+#price .box:hover {
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+}
+
+#price .price-header {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  color: #444;
+  -webkit-box-align: center;
+  align-items: center;
+  min-width: 0px;
+  min-height: 0px;
+  flex-direction: column;
+  flex: 0 0 auto;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+#price .price-title {
+  align-self: flex-start;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+}
+
+#price .price-plan {
+  align-self: flex-start;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+}
+
+#price .price-plan .start-from {
+  align-self: flex-start;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+#price .price-plan .number {
+  margin-left: 3px;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+#price .price-body {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0px;
+  min-height: 0px;
+  flex-direction: column;
+  flex: 1 1 0%;
+  overflow: auto;
+}
+
+#price .icon-container {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 12px 0;
+  -webkit-box-align: center;
+  align-items: center;
+  min-width: 0px;
+  min-height: 0px;
+  flex-direction: row;
+  padding: 3px 0;
+}
+
+#price .icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+}
+
+#price .desc {
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 23px;
 }
 
 /*--------------------------------------------------------------
