@@ -90,6 +90,9 @@
                   <a class="nav-link" href="team.html">Team</a>
                 </li>
                 <!-- <li class="nav-item">
+                  <button class="btn btn-light my-2 my-sm-0" type="submit">Request Demo</button>
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
               </li>
               <form class="form-inline">
@@ -124,6 +127,10 @@
                       </p>
                       <div class="btn-box">
                         <a href="#services" class="btn1"> Read More </a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn2" data-toggle="modal" data-target="#requestsoc">
+                          Request Demo
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -151,6 +158,32 @@
                       </p>
                       <div class="btn-box">
                         <a href="#services" class="btn1"> Read More </a>
+                        
+                        <!-- Button trigger modal -->
+                        <!-- <button type="button" class="btn2" data-toggle="modal" data-target="#requestpentest">
+                          Request Demo
+                        </button> -->
+
+                        <!-- Modal -->
+                        <!-- <div class="modal fade" id="requestpentest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Request Demo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                ...
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -178,6 +211,32 @@
                       </p>
                       <div class="btn-box">
                         <a href="#services" class="btn1"> Read More </a>
+
+                        <!-- Button trigger modal -->
+                        <!-- <button type="button" class="btn2" data-toggle="modal" data-target="#requestva">
+                          Request Demo
+                        </button> -->
+
+                        <!-- Modal -->
+                        <!-- <div class="modal fade" id="requestva" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Request Demo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                ...
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -206,6 +265,32 @@
                       </p>
                       <div class="btn-box">
                         <a href="#services" class="btn1"> Read More </a>
+                        
+                        <!-- Button trigger modal -->
+                        <!-- <button type="button" class="btn2" data-toggle="modal" data-target="#requestarchitec">
+                          Request Demo
+                        </button> -->
+
+                        <!-- Modal -->
+                        <!-- <div class="modal fade" id="requestarchitec" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Request Demo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                ...
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -230,6 +315,39 @@
           </ol>
         </div>
       </section>
+      <!-- Modal -->
+      <div class="modal fade" id="requestsoc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Request Demo</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" readonly class="form-control" id="recipient" name="recipient" value="support@rootguards.com">
+                </div>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Subject:</label>
+                  <input type="text" class="form-control" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message" name="message"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="btn btn-secondary mr-2" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="sendEmail()">Save changes</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- end slider section -->
     </div>
 

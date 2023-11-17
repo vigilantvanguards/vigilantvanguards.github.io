@@ -71,3 +71,22 @@ function getYear() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
   }
   
+    /** send_email **/
+  function sendEmail() {
+    var to = document.getElementById("recipient").value;
+    var subject = document.getElementById("subject").value;
+    var body = document.getElementById("message").value;
+
+    var mailtoLink =
+      "mailto:" +
+      to +
+      "?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+
+    window.location.href = mailtoLink;
+
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+    }
