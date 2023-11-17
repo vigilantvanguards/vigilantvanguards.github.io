@@ -800,6 +800,7 @@ a:focus {
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
   padding: 75px 25px 25px 25px;
+  height : 310px
 }
 
 .client_section .box .detail-box i {
