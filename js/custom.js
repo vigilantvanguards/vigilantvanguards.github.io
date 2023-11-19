@@ -72,21 +72,34 @@ function getYear() {
   }
   
     /** send_email **/
-  function sendEmail() {
-    var to = document.getElementById("recipient").value;
-    var subject = document.getElementById("subject").value;
-    var body = document.getElementById("message").value;
+    function sendEmail() {
+      var to = document.getElementById("recipient").value;
+      var subject = document.getElementById("subject").value;
+      var customer = document.getElementById("customer").value;
+      var company = document.getElementById("company").value;
+      var message = document.getElementById("message").value;
 
-    var mailtoLink =
-      "mailto:" +
-      to +
-      "?subject=" +
-      encodeURIComponent(subject) +
-      "&body=" +
-      encodeURIComponent(body);
+      var body = "Customer: " + customer + "\nCompany: " + company + "\nMessage: " + message;
 
-    window.location.href = mailtoLink;
+      var mailtoLink =
+          "mailto:" +
+          to +
+          "?subject=" +
+          encodeURIComponent(subject) +
+          "&body=" +
+          encodeURIComponent(body);
 
-    document.getElementById("subject").value = "";
-    document.getElementById("message").value = "";
-    }
+      window.location.href = mailtoLink;
+
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
+  }
+
+// function validateForm() {
+//     // your validation logic here
+//     if (/* validation fails */) {
+//         alert("Please fill in all required fields.");
+//         return false;
+//     }
+//     return true;
+// }
