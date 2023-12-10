@@ -532,7 +532,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #0a287a;
+  background-color: #0e2f8a;
   color: #ffffff;
 }
 
@@ -614,15 +614,18 @@ a:focus {
 
 .card-service .header {
   margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-service img {
   width: 100px;
   height: 100px;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 /* .why_section .box {
